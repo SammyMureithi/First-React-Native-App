@@ -15,7 +15,10 @@ function InputField( { text } ) {
     return (
         <View >
             <Text onPress={handleClick} style={styles.Text1} >Hello Again {customerName} ,{text} points {counter}</Text>
-            <Text  style={styles.green}>Am Green Color</Text>
+            <Text style={styles.green}>Am Green Color</Text>
+            <View style={styles.view}>
+            <Text>Am Green Color</Text>
+            </View>
       </View>
       
     )
@@ -31,6 +34,12 @@ const styles = StyleSheet.create( {
         color: "green",
         textAlign: "center",
         marginTop:20
+    },
+    view: {
+        width: 100,
+        height:200,
+        backgroundColor:"Pink",
+        color:"Red"
     }
 })
 
