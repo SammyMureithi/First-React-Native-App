@@ -18,11 +18,11 @@ function InputField( { text } ) {
         <View >
             <Text onPress={handleClick} style={styles.Text1} >Hello Again {customerName} ,{text} points {counter}</Text>
             <Text style={styles.green}>Am Green Color</Text>
-            <View style={styles.view}>
+            <View style={styles.viewContainer}>
                 <Text>Am Green Color</Text>
                 <Button title="Click"  />
                 <Button title='Ok' onPress={handleAlert} style={styles.button}/>
-            </View> 
+            </View>
       </View>
       
     )
@@ -39,11 +39,12 @@ const styles = StyleSheet.create( {
         textAlign: "center",
         marginTop:20
     },
-    view: {
-        width: 100,
-        height:200,
-        backgroundColor:"Pink",
-        color:"Red"
+    viewContainer: {
+        display: 'flex',
+        flexDirection: "row",
+        justifyContent:"space-between",
+        width: "100%",
+        backgroundColor: "pink",
     },
     button: {
         marginTop: 10,
